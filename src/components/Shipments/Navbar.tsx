@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Navbar(){
     return (
-        <div className="bg-lightbackground-200 flex flex-row justify-between items-center h-20 px-6 border-b-1 border-gray-300">
+        <div className="bg-lightbackground-200 flex flex-row justify-between items-center h-16 px-6 border-b-1 border-gray-300">
             <div className="flex text-zinc-700 font-medium">
                 <Image 
                     src={"/icons/shipments-black.svg"}

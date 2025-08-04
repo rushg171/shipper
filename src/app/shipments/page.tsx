@@ -9,7 +9,7 @@ import Totals from "@/components/Shipments/Totals";
 export default function Shipments(){
     return <div className="flex flex-col w-full bg-lightbackground-200">
         
-        <div className="fixed top-0 right-0 w-full pl-20 bg-lightbackground-200">
+        <div className="fixed top-0 right-0 w-full pl-12 bg-lightbackground-200">
             <Navbar/>
             <Topbar />
         </div>

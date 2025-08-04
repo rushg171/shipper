@@ -4,7 +4,6 @@ export default function Details({details, ind}:any){
     return (
         <div className="flex justify-between mr-6">
             <div className={`flex gap-3 w-full ${ind!=2?"border-r-1 border-gray-300":""} pr-6`}>
-
                 <div className="h-11 w-11 rounded-full bg-blue-100 flex justify-center items-center">
                     <Image
                         src={`/icons/${details.icon}.svg`}
