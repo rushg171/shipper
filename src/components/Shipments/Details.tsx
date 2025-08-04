@@ -5,7 +5,7 @@ export default function Details({details, ind}:any){
         <div className="flex justify-between mr-6">
             <div className={`flex gap-3 w-full border-r-1 ${ind!=2?"border-gray-300":""} pr-6`}>
 
-                <div className="h-11 w-11 rounded-full border-1 border-blue-700 bg-blue-100 flex justify-center items-center">
+                <div className="h-11 w-11 rounded-full border-1 border-primary-500 bg-blue-100 flex justify-center items-center">
                     <Image
                         src={`/icons/${details.icon}.svg`}
                         alt="User"

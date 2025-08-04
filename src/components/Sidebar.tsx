@@ -9,7 +9,7 @@ export default function Sidebar(){
     const pathname = usePathname()
     
     return(
-        <div className="fixed top-0 left-0 flex flex-col bg-blue-700 min-w-20 justify-start items-center z-10 min-h-screen">
+        <div className="fixed top-0 left-0 flex flex-col bg-primary-500 min-w-20 justify-start items-center z-10 min-h-screen max-h-screen">
             <Link href={"/"} className="w-full">
                 <div className="flex bg-white justify-center items-center w-full h-20">
                     <Image

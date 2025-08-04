@@ -20,7 +20,7 @@ export default function DetailsCard(){
         }
     ]
     return (
-        <div className="grid grid-cols-3 h-30 bg-white rounded-xl mx-6 justify-center items-center px-6 mt-50">
+        <div className="grid grid-cols-3 h-30 bg-white rounded-xl mx-6 justify-center items-center px-6 mt-40">
             {
                 detailsData.map((details, ind)=>{
                     return (

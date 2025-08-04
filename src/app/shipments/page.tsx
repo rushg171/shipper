@@ -7,17 +7,17 @@ import Topbar from "@/components/Shipments/Topbar";
 import Totals from "@/components/Shipments/Totals";
 
 export default function Shipments(){
-    return <div className="flex flex-col w-full bg-neutral-100">
+    return <div className="flex flex-col w-full bg-lightbackground-200">
         
-        <div className="fixed top-0 right-0 w-full pl-20 bg-neutral-100">
+        <div className="fixed top-0 right-0 w-full pl-20 bg-lightbackground-200">
             <Navbar/>
         <Topbar />
         </div>
-        <div className="w-full pl-20 pb-60 bg-neutral-100">
+        <div className="w-full pl-20 pb-60 bg-lightbackground-200">
         <DetailsCard />
         <ShippingMethod />
         <RepackingAndConsolidation />
         <ShipmentDetails /></div>
-        <div className="fixed bottom-0 right-0 pl-20 w-full bg-neutral-100"><Totals /></div>
+        <div className="fixed bottom-0 right-0 pl-20 w-full bg-lightbackground-200"><Totals /></div>
     </div>
 }
