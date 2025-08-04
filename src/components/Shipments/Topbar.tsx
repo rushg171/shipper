@@ -11,7 +11,7 @@ export default function Topbar(){
                     stages.map((stageName, ind)=>{
                         let isActive = ind == currentStage;
                         return (
-                            <div className="flex gap-3 items-center">
+                            <div key={stageName} className="flex gap-3 items-center">
                                 <div className={`rounded-full flex h-8 w-8 ${isActive? "bg-primary-500":"bg-green-500"} justify-center items-center p-1`}>
                                     {
                                         ind>=currentStage?

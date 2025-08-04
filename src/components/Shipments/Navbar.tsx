@@ -17,7 +17,7 @@ export default function Navbar(){
             </div>
             <div className="flex gap-2">
                 <Link href={"/notifications"}>
-                <div className="border-1 border-neutral-300 rounded-full flex h-10 w-10 justify-center items-center">
+                <div className="border-1 hover:bg-orange-300 border-neutral-300 rounded-full flex h-10 w-10 justify-center items-center">
                     <Image 
                         src={"/icons/bell-circle.svg"}
                         alt="Notifications"
@@ -27,7 +27,7 @@ export default function Navbar(){
                 </div>
                 </Link>
                 <Link href={"/menu"}>
-                <div className="border-1 border-neutral-300 rounded-full flex h-10 w-10 justify-center items-center">
+                <div className="border-1 border-neutral-300 hover:bg-orange-300 rounded-full flex h-10 w-10 justify-center items-center">
                     <Image 
                         src={"/icons/menu-circle.svg"}
                         alt="Menu"

@@ -18,7 +18,7 @@ export default function RepackingAndConsolidation(){
                         <tr>
                             {
                                 titles.map((title,ind)=>{
-                                    return <th key={title} className={`p-1 py-3 border-1 text-center text-white border-gray-200 bg-primary-500`}>
+                                    return <th key={randomUUID()} className={`p-1 py-3 border-1 text-center text-white border-gray-200 bg-primary-500`}>
                                                 {(ind>0&&ind<4) ? <div className="flex justify-center gap-0.5">{title} <Image src={"/icons/arrows-sort.svg"} alt="Sort" width={24} height={24}/></div> : title}
                                             </th>
                                 })

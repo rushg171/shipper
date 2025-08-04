@@ -28,8 +28,8 @@ export default function Sidebar(){
             {
                 sidebarOptions.map((item)=>{
                     const isActive = pathname == "/"+item;
-                    return <Link href={`/${item}`}>
-                    <div key={item} className={`flex hover:bg-blue-200 ${isActive? "bg-orange-500": ""}  justify-center items-center h-16 w-full`}>
+                    return <Link key={item} href={`/${item}`}>
+                    <div className={`flex hover:bg-blue-200 ${isActive? "bg-orange-500": ""}  justify-center items-center h-16 w-full`}>
                         <Image
                         src={`/icons/${item}.svg`}
                         alt={item}
@@ -45,8 +45,8 @@ export default function Sidebar(){
             {
                 bottomSidebarOptions.map((item)=>{
                     const isActive = pathname == "/"+item;
-                    return <Link href={`/${item}`}>
-                    <div key={item} className={`flex hover:bg-blue-200 ${isActive? "bg-orange-500": ""}  justify-center items-center h-16 w-full`}>
+                    return <Link key={item} href={`/${item}`}>
+                    <div className={`flex hover:bg-blue-200 ${isActive? "bg-orange-500": ""}  justify-center items-center h-16 w-full`}>
                         <Image
                         className="rounded-full w-6 h-6"
                         src={item=="profile"?`/icons/${item}.jpg`:`/icons/${item}.svg`}

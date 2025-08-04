@@ -11,13 +11,13 @@ export default function Shipments(){
         
         <div className="fixed top-0 right-0 w-full pl-20 bg-lightbackground-200">
             <Navbar/>
-        <Topbar />
+            <Topbar />
         </div>
-        <div className="w-full pl-20 pb-60 bg-lightbackground-200">
-        <DetailsCard />
-        <ShippingMethod />
-        <RepackingAndConsolidation />
-        <ShipmentDetails /></div>
+        <div className="w-full pl-20 pb-60 bg-lightbackground-200 max-w-screen overflow-x-clip">
+            <DetailsCard />
+            <ShippingMethod />
+            <RepackingAndConsolidation />
+            <ShipmentDetails /></div>
         <div className="fixed bottom-0 right-0 pl-20 w-full bg-lightbackground-200"><Totals /></div>
     </div>
 }
