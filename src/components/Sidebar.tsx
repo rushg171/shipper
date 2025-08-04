@@ -11,15 +11,15 @@ export default function Sidebar(){
     const pathname = usePathname()
     
     return(
-        <div className="fixed top-0 left-0 flex flex-col bg-primary-500 min-w-16 justify-start items-center z-10 min-h-screen max-h-screen h-full">
+        <div className="fixed top-0 left-0 flex flex-col bg-primary-500 min-w-18 justify-start items-center z-10 min-h-screen max-h-screen h-full">
             <Link href={"/"} className="w-full">
-                <div className="flex bg-white justify-center items-center w-full h-16">
+                <div className="flex bg-white justify-center items-center w-full h-20">
                     <Image
                         src="/icons/logo.png"
                         alt="Shipper"
                         width={37}
                         height={31}
-                        className="p-4 w-16 h-auto"
+                        className="p-4 w-17 h-auto"
                     />
                 </div>
             </Link>
@@ -29,7 +29,7 @@ export default function Sidebar(){
                 sidebarOptions.map((item)=>{
                     const isActive = pathname == "/"+item;
                     return <Link key={item} href={`/${item}`}>
-                    <div className={`flex hover:bg-blue-200 ${isActive? "bg-orange-500": ""}  justify-center items-center h-12 w-full`}>
+                    <div className={`flex hover:bg-blue-200 ${isActive? "bg-orange-500": ""}  justify-center items-center h-15 w-full`}>
                         <Image
                         src={`/icons/${item}.svg`}
                         alt={item}
@@ -46,7 +46,7 @@ export default function Sidebar(){
                 bottomSidebarOptions.map((item)=>{
                     const isActive = pathname == "/"+item;
                     return <Link key={item} href={`/${item}`}>
-                    <div className={`flex hover:bg-blue-200 ${isActive? "bg-orange-500": ""}  justify-center items-center h-12 w-full`}>
+                    <div className={`flex hover:bg-blue-200 ${isActive? "bg-orange-500": ""}  justify-center items-center h-15 w-full`}>
                         <Image
                         className="rounded-full w-6 h-6"
                         src={item=="profile"?`/icons/${item}.jpg`:`/icons/${item}.svg`}
